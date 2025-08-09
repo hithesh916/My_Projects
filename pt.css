@@ -7,7 +7,8 @@ body {
     height:400px;
     background:gray;
     margin:50px auto;
-    -webkit-animation:bgChange 2s 2s alternate infinite;
+    -webkit-animation: bgChange 2s 2s alternate infinite;
+    animation: bgChange 2s 2s alternate infinite;
     transition: all 2s ease;
 }
 
@@ -168,14 +169,28 @@ button {
 
 @-webkit-keyframes bgChange {
     0% {
-       background:#24b4de; 
+       background: #24b4de; 
     }
     
     50% {
-      background:#17a928;
+      background: #17a928;
     }
     
     100% {
-        background:#399cb9;
+        background: #399cb9;
+    }
+}
+
+@keyframes bgChange {
+    0% {
+       background: #24b4de; 
+    }
+    
+    50% {
+      background: #17a928;
+    }
+    
+    100% {
+        background: #399cb9;
     }
 }
